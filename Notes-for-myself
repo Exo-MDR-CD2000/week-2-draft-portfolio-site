@@ -1,0 +1,34 @@
+## INSTRUCTIONS
+
+GIVEN I need to sample a potential employee's previous work
+WHEN I load their portfolio
+THEN I am presented with the developer's name, a recent photo or avatar, and links to sections about them, their work, and how to contact them
+WHEN I click one of the links in the navigation
+THEN the UI scrolls to the corresponding section
+WHEN I click on the link to the section about their work
+THEN the UI scrolls to a section with titled images of the developer's applications
+WHEN I am presented with the developer's first application
+THEN that application's image should be larger in size than the others
+WHEN I click on the images of the applications
+THEN I am taken to that deployed application
+WHEN I resize the page or view the site on various screens and devices
+THEN I am presented with a responsive layout that adapts to my viewport
+
+
+## TODO
+
+Sections that need to be in the portfolio page:
+1) My name (with photo)
+2) About them
+3) My work (portfolio section)
+4) Contact Info
+
+### My notes
+
+There should be a navgation at the top of the page with links that jump to that section of the site. The UI must scroll to that section of the page instead of an instant jump
+
+The first picture of my first project should be larger than the rest? Is that right? I think so. This is only for the first project result. The others can be standard size like in the demo on the bootcamp page.
+
+When the user clicks on a certain project they are then sent the deployed version of that project. As of 6-20-2023, the only deployed project that I have is week one's challenge for refractored code. Link that one and I suppose put placeholder project cards on the bottom of the first one.
+
+Resizing the site should be responsive to certain screen sizes and devices. Definately use CSS, flexbox, @media, etc. for this part. 
