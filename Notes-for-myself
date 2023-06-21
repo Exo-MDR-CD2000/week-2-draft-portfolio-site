@@ -34,4 +34,6 @@ When the user clicks on a certain project they are then sent the deployed versio
 Resizing the site should be responsive to certain screen sizes and devices. Definately use CSS, flexbox, @media, etc. for this part. 
 
 
+<!-- No javascript needed for this project just yet. Simplistic is key here. -->
+
 <!-- I will have to put on hold my idea for a portfolio site that has the nav bar on the left and the right side of the page dynamically changing when the user clicks on the nav links. -->
