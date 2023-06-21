@@ -19,7 +19,7 @@ THEN I am presented with a responsive layout that adapts to my viewport
 
 Sections that need to be in the portfolio page:
 1) My name (with photo)
-2) About them
+2) About Me
 3) My work (portfolio section)
 4) Contact Info
 
@@ -32,3 +32,6 @@ The first picture of my first project should be larger than the rest? Is that ri
 When the user clicks on a certain project they are then sent the deployed version of that project. As of 6-20-2023, the only deployed project that I have is week one's challenge for refractored code. Link that one and I suppose put placeholder project cards on the bottom of the first one.
 
 Resizing the site should be responsive to certain screen sizes and devices. Definately use CSS, flexbox, @media, etc. for this part. 
+
+
+<!-- I will have to put on hold my idea for a portfolio site that has the nav bar on the left and the right side of the page dynamically changing when the user clicks on the nav links. -->
