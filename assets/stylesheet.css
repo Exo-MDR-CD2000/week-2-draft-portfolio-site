@@ -1,14 +1,47 @@
-/* --text: #040703;
---background: #e2eedd;
---primary-button: #b6d4ab;
---secondary-button: #f3f8f2;
---accent: #c4dcbc; 
-
+:root {
+  --text: #040703;
+  --background: #e2eedd;
+  --primary-button: #b6d4ab;
+  --secondary-button: #f3f8f2;
+  --accent: #c4dcbc; 
+  --font-family: 'Roboto', sans-serif;
+}
+/*
 Above lines are for a sample solor scheme that I generated from realtimecolors.com
 
 It is a grey, green, white, and black theme which could go nicely for this portfolio site
 
-
-
 */
 
+body {
+  background-color: var(--background);
+  font-family: var(--font-family);
+}
+
+.project-card {
+    display: inline-block;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    width: 300px;
+  }
+  
+  .project-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  .project-card h3 {
+    margin-top: 10px;
+    font-size: 1.2em;
+  }
+  
+  @media (max-width: 768px) {
+    .project-card {
+      display: block;
+      width: 100%;
+    }
+  }
