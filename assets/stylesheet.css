@@ -1,11 +1,29 @@
 :root {
   --text: #040703;
-  --background: #e2eedd;
-  --primary-button: #b6d4ab;
-  --secondary-button: #f3f8f2;
-  --accent: #c4dcbc; 
+  --background: #e4f1fe;
+  --primary-button: #8dc6ff;
+  --secondary-button: #22313f;
+  --accent: #34495e; 
   --font-family: 'Roboto', sans-serif;
 }
+
+.first-color { 
+	background: #e4f1fe; 
+}
+	
+.second-color { 
+	background: #8dc6ff; 
+}
+
+.third-color { 
+	background: #22313f; 
+}
+
+.fourth-color { 
+	background: #34495e; 
+}
+
+
 /*
 Above lines are for a sample solor scheme that I generated from realtimecolors.com
 
@@ -16,9 +34,46 @@ It is a grey, green, white, and black theme which could go nicely for this portf
 body {
   background-color: var(--background);
   font-family: var(--font-family);
+  font-size: 16px;
 }
 
-.project-card {
+h1 {
+  color: var(--text);
+  font-size: 2.5em;
+  text-align: center;
+}
+
+.hero-avatar img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+}
+
+
+.project-card-1 {
+  display: inline-block;
+  margin: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  text-align: center;
+  width: 300px;
+}
+
+.project-card-1 img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.project-card-1 h3 {
+  margin-top: 10px;
+  font-size: 1.2em;
+}
+
+.project-card-others {
     display: inline-block;
     margin: 10px;
     border: 1px solid #ccc;
@@ -28,13 +83,13 @@ body {
     width: 300px;
   }
   
-  .project-card img {
+  .project-card-others img {
     max-width: 100%;
     height: auto;
     border-radius: 5px;
   }
   
-  .project-card h3 {
+  .project-card-others h3 {
     margin-top: 10px;
     font-size: 1.2em;
   }
@@ -45,3 +100,25 @@ body {
       width: 100%;
     }
   }
+
+  @media (max-width: 480px) {
+    .hero-avatar img {
+      width: 100px;
+      height: 100px;
+    }
+  }
+
+  .hero-image {
+    --s: 200px; /* control the size */
+    --c1: #1d1d1d;
+    --c2: #4e4f51;
+    --c3: #3c3c3c;
+    
+    background:
+      repeating-conic-gradient(from 30deg,#0000 0 120deg,var(--c3) 0 180deg) 
+       calc(.5*var(--s)) calc(.5*var(--s)*0.577),
+      repeating-conic-gradient(from 30deg,var(--c1) 0 60deg,var(--c2) 0 120deg,var(--c3) 0 180deg);
+    background-size: var(--s) calc(var(--s)*0.577);
+    /* 0.577 = tan(30deg)*/
+  }
+  
