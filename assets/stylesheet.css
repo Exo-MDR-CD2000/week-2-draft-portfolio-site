@@ -7,6 +7,8 @@
   --font-family: 'Roboto', sans-serif;
 }
 
+
+
 /* .first-color { 
 	background: #e4f1fe; 
 }
@@ -60,7 +62,9 @@ body {
 h1 {
   color: var(--text);
   font-size: 2.5em;
-  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  /* text-align: center; */
 }
 
 header {
@@ -69,9 +73,18 @@ header {
   align-items: center;
 }
 
-.nav-main-left-logo-text {
-  order: 1;
+.nav-main-left-logo-text-initials {
+  display: none;
 }
+
+.nav-main-left-logo-text {
+  display: flex;
+  justify-content: space-around;
+  padding-left: 10px;
+}
+/* .nav-main-left-logo-text {
+  order: 1;
+} */
 
 nav {
   order: 2;
@@ -99,9 +112,16 @@ nav ul li {
   color: var(--text);
 }
 
-.hero-image img[src="./assets/images/laptop-4k-hero-image.jpg"] {
+/* .hero-image img[src="./assets/images/laptop-4k-hero-image.jpg"] {
   width: 100%;
   height: auto;
+  overflow: hidden;
+} */
+
+.hero-avatar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .hero-avatar img {
@@ -110,6 +130,14 @@ nav ul li {
   border-radius: 50%;
   width: 200px;
   height: 200px;
+}
+
+.hero-text-small p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-style: italic;
+  margin-top: -20px;
 }
 
 
@@ -162,9 +190,19 @@ nav ul li {
     }
   }
 
-  @media (max-width: 480px) {
+  /* @media (max-width: 480px) {
     .hero-avatar img {
       width: 100px;
       height: 100px;
+    }
+  } */
+
+  @media (max-width: 600px) {
+    .nav-main-left-logo-text {
+      display: none; /* Hide the full name on smaller screens */
+    }
+    
+    .nav-main-left-logo-text-initials {
+      display: inline; /* Show the initials on smaller screens */
     }
   }
