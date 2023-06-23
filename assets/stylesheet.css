@@ -78,7 +78,7 @@ nav {
 }
 
 nav ul {
-  isplay: flex; /* use flexbox to align the nav items */
+  display: flex; /* use flexbox to align the nav items */
   justify-content: space-between; /* space out the nav items evenly */
   list-style: none; /* remove the default list styles */
   margin: 0; /* remove any default margin */
