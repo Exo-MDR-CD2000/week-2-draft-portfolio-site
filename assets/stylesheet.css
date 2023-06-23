@@ -63,28 +63,36 @@ h1 {
   text-align: center;
 }
 
-/* Style the navigation menu */
 header {
-  height: 75px; /* set the height of the header */
-  width: 100%; /* set the width of the header to 100% of the parent container */
-  overflow: auto; /* add overflow to the header to clear any floated elements inside it */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-main-left-logo-text {
+  order: 1;
 }
 
 nav {
-  display: flex; /* use flexbox to align the nav items */
-  justify-content: flex-end; /* align the nav items to the right */
-  align-items: center; /* vertically center the nav items */
-  height: 100%; /* set the height of the nav to match the height of the header */
+  order: 2;
 }
 
 nav ul {
-  display: flex; /* use flexbox to align the nav items */
-  justify-content: space-between; /* space out the nav items evenly */
-  list-style: none; /* remove the default list styles */
-  margin: 0; /* remove any default margin */
-  padding: 0; /* remove any default padding */
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  width: 400px;
 }
 
+nav ul li a {
+  color: var(--text);
+  text-decoration: none;
+  font-size: 1.2em;
+}
+
+nav ul li {
+  margin-right: 10px;
+}
 
 .hero-text h1,
 .hero-text p {
