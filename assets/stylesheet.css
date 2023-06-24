@@ -91,15 +91,18 @@ nav {
 
 nav ul {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   list-style: none;
+  flex-wrap: wrap;
   width: 400px;
 }
 
 nav ul li a {
   color: var(--text);
   text-decoration: none;
-  font-size: 1.2em;
+  font-size: 1em;
+  font-weight: bolder;
+  font-style: italic;
 }
 
 nav ul li {
@@ -111,7 +114,6 @@ nav ul li {
   flex-direction: column;
   flex-shrink: 1;
   margin-top: 20px;
-  border-style: dashed;
   align-items: center;
   border-radius: 10px;
     /* display: inline-block; */
@@ -121,6 +123,7 @@ nav ul li {
 .hero-text h1,
 .hero-text p {
   color: var(--text);
+  font-weight: bolder;
 }
 
 /* .hero-image img[src="./assets/images/laptop-4k-hero-image.jpg"] {
