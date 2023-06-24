@@ -119,6 +119,14 @@ nav ul li {
 }
 
 
+.hero-avatar img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+}
+
 /* .hero-container-box {
   display: flex;
   flex-direction: column;
@@ -130,10 +138,14 @@ nav ul li {
 } 
 
 
-.hero-text h1,
-.hero-text p {
+.hero-h1 h1, {
   color: var(--text);
   font-weight: bolder;
+}
+
+.hero-p p {
+  color: var(--text);
+  font-style: italic;
 }
 
 /* .hero-image img[src="./assets/images/laptop-4k-hero-image.jpg"] {
