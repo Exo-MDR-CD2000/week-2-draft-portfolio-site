@@ -155,7 +155,14 @@ nav ul li {
   margin-top: -20px;
 }
 
-.about-me-h2 { 
+
+.main-about-me {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* .about-me-h2 { 
   display: flex;
   justify-content: center;
   align-items: center;
@@ -170,8 +177,10 @@ nav ul li {
   flex-wrap: wrap;
   text-align: center;
   padding-block: 30px;
-  /* margin-block: 30px; */
-}
+  /* margin-block: 30px; 
+} */
+
+/* i think what I'm doing wrong is not setting up general containers for my sections/divs. I should setup a general container for universal css rules and then use div classes for the individual attributes of that element.  */
 
 .project-text-h2 {
   display: flex;
