@@ -109,7 +109,17 @@ nav ul li {
   margin-right: 10px;
 }
 
+
 .hero-container-box {
+    margin-top: 300px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+
+/* .hero-container-box {
   display: flex;
   flex-direction: column;
   flex-shrink: 1;
@@ -117,7 +127,7 @@ nav ul li {
   align-items: center;
   border-radius: 10px;
     /* display: inline-block; */
-}
+} 
 
 
 .hero-text h1,
@@ -132,7 +142,7 @@ nav ul li {
   overflow: hidden;
 } */
 
-.hero-avatar {
+/* .hero-avatar {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -152,17 +162,18 @@ nav ul li {
   align-items: center;
   font-style: italic;
   position: relative;
-  margin-top: -20px;
-}
+} */
 
 
 .main-about-me {
+  margin-top: 300px;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
   align-items: center;
 }
 
-/* .about-me-h2 { 
+ /* .about-me-h2 { 
   display: flex;
   justify-content: center;
   align-items: center;
@@ -170,15 +181,19 @@ nav ul li {
   position: relative;
   margin-top: 100px;
   font-size: 25px;
-}
+} */
 
 .about-me-p {
   display: flex;
   flex-wrap: wrap;
   text-align: center;
-  padding-block: 30px;
-  /* margin-block: 30px; 
-} */
+  padding-left: 650px;
+  padding-right: 650px;
+  padding-top: 50px;
+
+  /* padding-block: 30px; */
+  /* margin-block: 30px; */
+}
 
 /* i think what I'm doing wrong is not setting up general containers for my sections/divs. I should setup a general container for universal css rules and then use div classes for the individual attributes of that element.  */
 
