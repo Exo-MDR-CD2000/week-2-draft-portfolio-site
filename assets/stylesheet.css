@@ -7,7 +7,19 @@
   --font-family: 'Roboto', sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
 
+
+/* #home,
+#about-me,
+#portfolio,
+#contact, {
+  scroll-behavior: smooth;
+} */
+
+/* above does not work */
 
 /* .first-color { 
 	background: #e4f1fe; 
