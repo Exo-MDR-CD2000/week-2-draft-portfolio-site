@@ -223,8 +223,11 @@ nav ul li {
 
 
 .portfolio-cards-container {
+  margin-top: 300px;
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
+  align-items: center;
 }
 
 .portfolio-cards {
@@ -349,8 +352,10 @@ nav ul li {
   } */
   
 .main-contact-me {
+  margin-top: 300px;
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   align-items: center;
 }
 
@@ -358,6 +363,18 @@ nav ul li {
   margin-top: -10px;
 }
 
+.social-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+/* Got to figure out how to hide the text on the links and only show the icons */
+
+.social-links a[href="https://github.com/Exo-MDR-CD2000"] > img {
+  width: 100px;
+  height: 100px;
+}
 
 /* .main-contact-me {
   display: flex;
