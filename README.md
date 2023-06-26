@@ -6,7 +6,7 @@ I was tasked with creating my very own portfolio site while following some key a
 
 ## Screenshot on Desktop Example
 
-![alt portfolio site](assets/images/portfolio-desktop.png)
+![alt portfolio site desktop](assets/images/portfolio-desktop.png)
 
 
 ## Screenshot on Mobile Example
@@ -18,6 +18,6 @@ Open your web browser's inspect tool to see the HTML layout of the site. Play ar
 
 ## Deployment Link
 
-Deployed: [Github Deplayed Page](https://exo-mdr-cd2000.github.io/week-2-draft-portfolio-site/)
+Deployed: [Github Deployed Page](https://exo-mdr-cd2000.github.io/week-2-draft-portfolio-site/)
 
 Github repo: [week-2-draft-portfolio-site](https://github.com/Exo-MDR-CD2000/week-2-draft-portfolio-site)
