@@ -72,7 +72,9 @@ body {
 }
 
 img {
+  /* overflow: hidden; */
   width: 100%;
+  /* margin: auto; */
 }
 
 h1 {
@@ -252,14 +254,19 @@ nav ul li {
   border-radius: 50px;
   padding: 10px;
   margin: 20px;
-  box-shadow: #5b7553;
+  box-shadow: #3a941f;
   flex: 0 0 300px;
   max-width: 100%;
 }
 
+/* .portfolio-cards .img {
+  width: 200px;
+  height: auto;
+} */
+
 .card[role="button"]:hover {
   cursor: pointer;
-  background-color: #5b7553;
+  background-color: #3d7d8d;
   color: white;
 }
 
