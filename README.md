@@ -21,7 +21,7 @@ The HTML semantic picture is taken from my other Github repo.
 ![alt portfolio site mobile](assets/images/portfolio-mobile.png)
 ## Usage
 
-Open your web browser's inspect tool to see the HTML layout of the site. Play around with different screen resolutions to see how the site looks. Again, not perfect but somewhat okay.
+Open your web browser's inspect tool to see the HTML layout of the site. Play around with different screen resolutions to see how the site looks. Again, not perfect but somewhat okay. The links on the page all work except for the placeholder cards.
 
 ## Deployment Link
 
