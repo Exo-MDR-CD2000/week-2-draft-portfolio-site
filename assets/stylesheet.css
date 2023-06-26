@@ -5,6 +5,7 @@
   --secondary-button: #22313f;
   --accent: #34495e;
   --font-family: "Roboto", sans-serif;
+  --shadow-text: 2px 4px 4px rgb(0, 0, 0);
 }
 
 html {
@@ -159,11 +160,13 @@ nav ul li {
 .hero-h1 h1 {
   color: var(--text);
   font-weight: bolder;
+  text-shadow: var(--shadow-text)
 }
 
 .hero-p p {
   color: var(--text);
   font-style: italic;
+  text-shadow: var(--shadow-text)
 }
 
 /* .hero-image img[src="./assets/images/laptop-4k-hero-image.jpg"] {
