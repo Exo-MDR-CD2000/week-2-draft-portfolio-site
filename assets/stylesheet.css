@@ -6,6 +6,7 @@
   --accent: #34495e;
   --font-family: "Roboto", sans-serif;
   --shadow-text: 2px 4px 4px rgb(0, 0, 0);
+  --outline: #000000b7 solid 2px;
 }
 
 html {
@@ -146,6 +147,8 @@ nav ul li {
   border-radius: 50%;
   width: 200px;
   height: 200px;
+  outline: var(--outline);
+  /* box-shadow: var(--box-shadow); */
 }
 
 /* .hero-container-box {
