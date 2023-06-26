@@ -280,6 +280,9 @@ nav ul li {
   font-weight: bold;
   font-style: italic;
 }
+.portfolio-p {
+  text-align: center;
+}
 
 /* I'm honestly drawing a blank as to how I can make these portfolio boxes smaller on the site. They are way too big. */
 
@@ -432,8 +435,23 @@ nav ul li {
   position: relative;
 } */
 
-@media (min)
+@media (min-width: 600px) {
+  .hero-container-box {
+    width: 70%;
+    /* margin: 0 auto; */
+    margin: 300px auto auto auto;
+    text-align: center;
+  }
+}
 
+@media (min-width: 550px) {
+  .hero-container-box {
+    width: 70%;
+    /* margin: 0 auto; */
+    margin: 300px auto auto auto;
+    text-align: center;
+  }
+}
 
 @media (max-width: 768px) {
   .project-card {
@@ -452,7 +470,7 @@ nav ul li {
 /* Mobile First Design */
 .about-me-p {
   width: 100%;
-  font-size: 150%;
+  font-size: 140%;
   margin: 0 10px;
 }
 
@@ -475,3 +493,30 @@ nav ul li {
     margin: 0 auto;
   }
 }
+
+header nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (max-width: 550px) {
+  header nav ul {
+    flex-direction: column;
+    padding: 0;
+    margin: 50px 0 -80px auto;
+    font-size: 150%;
+  }
+  header nav li {
+    margin-bottom: 30px;
+  }
+  .nav-main-left-logo-text {
+    display: none;
+  }
+}
+
+/* Lines 497-516 attempts to address the header as it was causing issues for mobile screens. I changed it to a column which fixes the issue a bit but not entirely. */
+
+/* This will have to do for media queries. It looks alright on the previews but could use some touch ups here and there. */
+
+/* Let's use 150% for headers and 140% for paragraphs */
