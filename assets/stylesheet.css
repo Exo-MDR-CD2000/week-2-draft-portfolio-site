@@ -255,6 +255,14 @@ nav ul li {
   max-width: 100%;
 }
 
+/* .card a img {
+  width: 600px;
+  height: 426px;
+  overflow: hidden;
+} */
+
+/* above doesn't work to resize image within the container */
+
 /* .portfolio-cards .img {
   width: 200px;
   height: auto;
@@ -434,6 +442,8 @@ nav ul li {
   font-style: italic;
   position: relative;
 } */
+
+/* -------------------------------- @media begins down below ------------------------------------ */
 
 @media (min-width: 600px) {
   .hero-container-box {
