@@ -25,6 +25,6 @@ Open your web browser's inspect tool to see the HTML layout of the site. Play ar
 
 ## Deployment Link
 
-Deployed: [Github Deployed Page](https://exo-mdr-cd2000.github.io/week-2-draft-portfolio-site/)
+Deployed Page: [Github Deployed Page](https://exo-mdr-cd2000.github.io/week-2-draft-portfolio-site/)
 
 Github repo: [week-2-draft-portfolio-site](https://github.com/Exo-MDR-CD2000/week-2-draft-portfolio-site)
