@@ -3,14 +3,13 @@
   --background: #000;
   --primary-button: #5b7553;
   --secondary-button: #22313f;
-  --accent: #34495e; 
-  --font-family: 'Roboto', sans-serif;
+  --accent: #34495e;
+  --font-family: "Roboto", sans-serif;
 }
 
 html {
   scroll-behavior: smooth;
 }
-
 
 /* #home,
 #about-me,
@@ -36,7 +35,6 @@ html {
 .fourth-color { 
 	background: #34495e; 
 } */
-
 
 /* .hero-image {
   background-image: linear-gradient(
@@ -68,6 +66,10 @@ body {
   font-family: var(--font-family);
   font-size: 16px;
   color: var(--text);
+}
+
+img {
+  width: 100%;
 }
 
 h1 {
@@ -121,15 +123,21 @@ nav ul li {
   margin-right: 10px;
 }
 
-
 .hero-container-box {
-    margin-top: 300px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
+  padding: 30px 0 0; /* top, right, bottom*/
+  padding: 30px 0 0 0; /* top, right, bottom, left */
+  padding: 30px 0; /* top/bottom, left/right */
+  padding: 30px; /* all around */
+  margin-top: 300px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  background-image: url(./images/laptop-4k-hero-image.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
-
 
 .hero-avatar img {
   max-width: 100%;
@@ -147,7 +155,6 @@ nav ul li {
   align-items: center;
   border-radius: 10px;
   /* display: inline-block; */
-
 
 .hero-h1 h1 {
   color: var(--text);
@@ -187,7 +194,6 @@ nav ul li {
   position: relative;
 } */
 
-
 .main-about-me {
   margin-top: 300px;
   display: flex;
@@ -196,7 +202,7 @@ nav ul li {
   align-items: center;
 }
 
- /* .about-me-h2 { 
+/* .about-me-h2 { 
   display: flex;
   justify-content: center;
   align-items: center;
@@ -210,8 +216,6 @@ nav ul li {
   display: flex;
   flex-wrap: wrap;
   text-align: center;
-  padding-left: 650px;
-  padding-right: 650px;
   padding-top: 50px;
 
   /* padding-block: 30px; */
@@ -219,8 +223,6 @@ nav ul li {
 }
 
 /* i think what I'm doing wrong is not setting up general containers for my sections/divs. I should setup a general container for universal css rules and then use div classes for the individual attributes of that element.  */
-
-
 
 .portfolio-cards-container {
   margin-top: 300px;
@@ -244,7 +246,16 @@ nav ul li {
   margin: 20px;
   box-shadow: #5b7553;
   flex: 0 0 300px;
+  max-width: 100%;
 }
+
+.card[role="button"]:hover {
+  cursor: pointer;
+  background-color: #5b7553;
+  color: white;
+}
+
+/* above css rule adds styling to the protfolio cards and makes them a clickable button (in the pseudo class on lines 249-252 */
 
 .portfolio-cards-container .card h3 {
   text-align: center;
@@ -270,8 +281,6 @@ nav ul li {
 
 /* keep font size of 25px for those type of sections */
 
-
-
 /* .main-project-text {
   display: flex;
   justify-content: center;
@@ -281,7 +290,6 @@ nav ul li {
   margin-top: -20px;
 } */
 
-
 /* .card-layout {
   display: flex;
   justify-content: center;
@@ -289,13 +297,11 @@ nav ul li {
   flex-wrap: wrap;
 } */
 
-
 /* .main-project-cards {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 } */
-
 
 /* .project-card-1 {
   display: inline-block;
@@ -350,7 +356,7 @@ nav ul li {
     margin-top: 10px;
     font-size: 1.2em;
   } */
-  
+
 .main-contact-me {
   margin-top: 300px;
   display: flex;
@@ -371,7 +377,8 @@ nav ul li {
 
 /* Got to figure out how to hide the text on the links and only show the icons */
 
-.social-links a[href="https://github.com/Exo-MDR-CD2000"] > img {
+.social-links a[href="https://github.com/Exo-MDR-CD2000"] > img
+{
   width: 100px;
   height: 100px;
 }
@@ -399,26 +406,53 @@ nav ul li {
   position: relative;
 } */
 
-  @media (max-width: 768px) {
-    .project-card {
-      display: block;
-      width: 100%;
-    }
+@media (max-width: 768px) {
+  .project-card {
+    display: block;
+    width: 100%;
   }
+}
 
-  /* @media (max-width: 480px) {
+/* @media (max-width: 480px) {
     .hero-avatar img {
       width: 100px;
       height: 100px;
     }
   } */
 
-  @media (max-width: 600px) {
-    .nav-main-left-logo-text {
-      display: none; /* Hide the full name on smaller screens */
-    }
-    
-    .nav-main-left-logo-text-initials {
-      display: inline; /* Show the initials on smaller screens */
-    }
+@media (max-width: 600px) {
+  .nav-main-left-logo-text {
+    display: none; /* Hide the full name on smaller screens */
   }
+
+  .nav-main-left-logo-text-initials {
+    display: inline; /* Show the initials on smaller screens */
+  }
+}
+
+/* Mobile First Design */
+.about-me-p {
+  width: 100%;
+  font-size: 150%;
+  margin: 0 10px;
+}
+
+/* 1400px or wider */
+@media (min-width: 1400px) {
+  .about-me-p {
+    font-size: 100%;
+    width: 70%;
+    margin: 0 auto;
+  }
+  .portfolio-cards .card {
+    max-width: 250px;
+  }
+}
+
+/* 1600px or wider */
+@media (min-width: 1600px) {
+  .about-me-p {
+    width: 60%;
+    margin: 0 auto;
+  }
+}
