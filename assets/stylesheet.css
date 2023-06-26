@@ -510,6 +510,12 @@ header nav ul {
   header nav li {
     margin-bottom: 30px;
   }
+  header nav ul li a {
+    border-bottom: 1px solid white;
+  }
+  /* header nav ul li a:hover {
+    box-shadow: 5px rgba(51, 161, 207, 0.753);
+  } */
   .nav-main-left-logo-text {
     display: none;
   }
