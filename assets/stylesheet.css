@@ -212,21 +212,16 @@ nav ul li {
   align-items: center;
 }
 
-/* .about-me-h2 { 
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.about-me-h2 { 
+  font-weight: bold;
   font-style: italic;
-  position: relative;
-  margin-top: 100px;
-  font-size: 25px;
-} */
+}
 
 .about-me-p {
   display: flex;
   flex-wrap: wrap;
   text-align: center;
-  padding-top: 50px;
+  
 
   /* padding-block: 30px; */
   /* margin-block: 30px; */
@@ -278,6 +273,11 @@ nav ul li {
 
 .portfolio-cards-container .card p {
   text-align: center;
+}
+
+.portfolio-h2 {
+  font-weight: bold;
+  font-style: italic;
 }
 
 /* I'm honestly drawing a blank as to how I can make these portfolio boxes smaller on the site. They are way too big. */
@@ -380,8 +380,14 @@ nav ul li {
   align-items: center;
 }
 
+.main-contact-me h2 {
+  font-weight: bold;
+  font-style: italic;
+}
+
 .main-contact-me p {
-  margin-top: -10px;
+  margin-top: 5px;
+  /* font-style: italic; */
 }
 
 .social-links {
@@ -396,6 +402,10 @@ nav ul li {
 {
   width: 100px;
   height: 100px;
+}
+
+.social-links {
+  margin-bottom: 100px;
 }
 
 /* .social-links a[href="#contact3"] > img {
@@ -434,16 +444,6 @@ nav ul li {
       height: 100px;
     }
   } */
-
-@media (max-width: 600px) {
-  .nav-main-left-logo-text {
-    display: none; /* Hide the full name on smaller screens */
-  }
-
-  .nav-main-left-logo-text-initials {
-    display: inline; /* Show the initials on smaller screens */
-  }
-}
 
 /* Mobile First Design */
 .about-me-p {
