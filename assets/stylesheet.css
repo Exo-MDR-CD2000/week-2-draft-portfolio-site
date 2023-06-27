@@ -225,7 +225,7 @@ nav ul li {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  /* text-align: center; */
+  text-align: center;
   
 
   /* padding-block: 30px; */
