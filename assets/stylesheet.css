@@ -224,7 +224,8 @@ nav ul li {
 .about-me-p {
   display: flex;
   flex-wrap: wrap;
-  text-align: center;
+  justify-content: center;
+  /* text-align: center; */
   
 
   /* padding-block: 30px; */
